@@ -42,5 +42,5 @@ url = "https://github.com/you-chris"
 greeting = "Hi, I'm Christopher. I build AI agents that help people talk about their health."
 question = "What are you working on now?"
 answer = "At the Johns Hopkins Center for Digital Health & AI, I build next-generation AI agents for healthcare and bring them responsibly into clinical practice. Before Hopkins, at the University of Florida, I built AI agents for NIH-funded R24 and U01 projects helping patients learn about and join cancer clinical trials."
-images = ["images/Demo1Photo.png", "images/r24.png", "images/ClassificationMI.png"]
+images = ["images/Demo1Photo.webp", "images/r24.png", "images/ClassificationMI.webp"]
 image_alts = ["An embodied AI agent greeting a user", "ALEX, a virtual health assistant for clinical trial education", "A chatbot that classifies change talk during a motivational interview"]

@@ -17,13 +17,13 @@ date = "2026-06"
 title = "Build-A-Being Yourself published at HCI International 2026"
 text = "Our web-based system for authoring embodied conversational agents in healthcare research, used across NIH-funded studies."
 paper = "you2025build"
-image = "images/bab.png"
+image = "images/bab.webp"
 
 [[news]]
 date = "2026-04"
 title = "Defended my dissertation"
 text = "<i>A change in perspective: Exploring interaction paradigms in AI and virtual human systems that engage users and promote mental health.</i>"
-image = "images/Demo1Photo.png"
+image = "images/avatars.webp"
 
 [[news]]
 date = "2026-01"
@@ -36,7 +36,7 @@ date = "2025-09"
 title = "Alter egos alter engagement published in Frontiers in Digital Health"
 text = "Perspective-taking can improve how much, and how deeply, people disclose to AI chatbots that promote mental wellbeing."
 paper = "you2025alter"
-image = "images/Demo2Photo.png"
+image = "images/Demo2Photo.webp"
 
 [[news]]
 date = "2025-03"
@@ -48,7 +48,7 @@ date = "2024-10"
 title = "Presented A Sense of Urgency on the Sense of Agency at IEEE ISMAR 2024"
 text = "Published in IEEE Transactions on Visualization and Computer Graphics."
 paper = "you2024sense"
-image = "images/embodiment.png"
+image = "images/embodiment.webp"
 
 [[news]]
 date = "2024-07"
@@ -66,7 +66,7 @@ date = "2022-10"
 title = "Presented Strafing Gain at IEEE ISMAR 2022"
 text = "A redirected walking technique that shifts users along a diagonal while keeping their orientation."
 paper = "you2022strafing"
-image = "images/rdw.png"
+image = "images/rdw.webp"
 
 [[news]]
 date = "2022-09"
