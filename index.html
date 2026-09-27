@@ -48,12 +48,17 @@
       <img class="avatar" src="images/headshot.jpg" alt="Christopher You" width="56" height="56">
       <p class="bubble big">Hi, I&#x27;m Christopher. I build AI agents that help people talk about their health.</p>
     </div>
-    <p class="bubble user">What are you working on now?</p>
-    <div class="turn agent reply">
+    <button type="button" class="ask" data-ask hidden>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3h11A2.5 2.5 0 0 1 20 5.5v8a2.5 2.5 0 0 1-2.5 2.5H10l-4.5 4v-4A2.5 2.5 0 0 1 4 13.5Z"/></svg>
+      <span>What are you working on now?</span>
+      <span class="ask-hint">Ask</span>
+    </button>
+    <p class="bubble user" data-question>What are you working on now?</p>
+    <div class="turn agent reply" data-reply aria-live="polite">
       <span class="avatar-space" aria-hidden="true"></span>
       <div>
         <p class="bubble typing" aria-hidden="true"><span></span><span></span><span></span></p>
-        <p class="bubble answer">I&#x27;m a Postdoctoral Fellow at the Johns Hopkins Center for Digital Health &amp; AI, working on next-generation AI models, responsible AI, and bringing AI into clinical practice. My PhD looked at how perspective-taking and embodiment change what people share with AI agents in mental health conversations.</p>
+        <p class="bubble answer" tabindex="-1">At the Johns Hopkins Center for Digital Health &amp; AI, I build next-generation AI agents for healthcare and bring them responsibly into clinical practice. Before Hopkins, at the University of Florida, I built AI agents for NIH-funded R24 and U01 projects helping patients learn about and join cancer clinical trials.</p>
       </div>
     </div>
     <p class="chips">

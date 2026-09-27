@@ -1,17 +1,32 @@
 // Small progressive enhancements. Every page works without this file.
 
-// Home: play the introduction conversation once per visit.
+// Home: the visitor asks the question; the agent "types" and answers.
+// Without JS the whole exchange is simply shown.
 (function () {
-  var chat = document.querySelector(".chat");
-  if (!chat) return;
+  var ask = document.querySelector("[data-ask]");
+  if (!ask) return;
+  var chat = ask.closest(".chat");
+  var question = chat.querySelector("[data-question]");
+  var reply = chat.querySelector("[data-reply]");
+  var answer = reply.querySelector(".answer");
   var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  var seen = false;
-  try { seen = sessionStorage.getItem("chat-played") === "1"; } catch (e) {}
-  if (reduce || seen) return;
-  try { sessionStorage.setItem("chat-played", "1"); } catch (e) {}
-  chat.classList.add("play", "typing-now");
-  setTimeout(function () { chat.classList.remove("typing-now"); }, 2100);
-  setTimeout(function () { chat.classList.add("settled"); }, 3200);
+  question.hidden = true;
+  reply.hidden = true;
+  ask.hidden = false;
+  ask.addEventListener("click", function () {
+    ask.hidden = true;
+    question.hidden = false;
+    question.classList.add("enter");
+    setTimeout(function () {
+      reply.hidden = false;
+      reply.classList.add("enter");
+      chat.classList.add("typing-now");
+      setTimeout(function () {
+        chat.classList.remove("typing-now");
+        answer.focus({ preventScroll: true });
+      }, reduce ? 0 : 1100);
+    }, reduce ? 0 : 350);
+  });
 })();
 
 // Publications: filter by type.

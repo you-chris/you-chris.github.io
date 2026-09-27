@@ -136,18 +136,38 @@ a:hover { text-decoration-thickness: 2px; }
 .mosaic img { width: 100%; height: 100%; object-fit: cover; border-radius: var(--radius); box-shadow: var(--shadow); }
 .mosaic img:first-child { grid-column: 1 / -1; }
 
-/* one orchestrated moment: the conversation plays once on load (site.js adds .play) */
-.chat.play > * { opacity: 0; animation: rise 0.45s ease-out forwards; }
-.chat.play > .turn:first-child { animation-delay: 0.05s; }
-.chat.play > .user { animation-delay: 0.7s; }
-.chat.play > .reply { animation-delay: 1.2s; }
-.chat.play > .chips { animation-delay: 2.4s; }
+/* the question is a button: clicking it "sends" it and the agent answers (site.js) */
+.ask {
+  align-self: flex-end; display: inline-flex; align-items: center; gap: 10px;
+  font: 500 16px/1.2 var(--sans); color: var(--blue); cursor: pointer;
+  background: var(--surface); border: 1.5px solid var(--blue);
+  border-radius: 22px 22px 6px 22px; padding: 11px 12px 11px 16px;
+  box-shadow: var(--shadow);
+}
+.ask[hidden] { display: none; }
+.ask svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linejoin: round; flex: none; }
+.ask-hint {
+  font-size: 13px; font-weight: 600; color: var(--on-blue); background: var(--blue);
+  border-radius: 999px; padding: 4px 10px;
+}
+.ask:hover { background: var(--blue-soft); }
+.ask:active { transform: translateY(1px); }
+@media (prefers-reduced-motion: no-preference) {
+  .ask { animation: nudge 2.4s ease-in-out 1s 2; }
+}
+@keyframes nudge {
+  0%, 100% { box-shadow: var(--shadow), 0 0 0 0 color-mix(in srgb, var(--blue) 45%, transparent); }
+  50% { box-shadow: var(--shadow), 0 0 0 8px color-mix(in srgb, var(--blue) 0%, transparent); }
+}
+.chat [hidden] { display: none; }
+.chat .enter { animation: rise 0.35s ease-out both; }
+@media (prefers-reduced-motion: reduce) { .chat .enter { animation: none; } }
 .chat.typing-now .typing { display: inline-flex; gap: 5px; padding: 16px 18px; }
 .chat.typing-now .answer { display: none; }
+.answer:focus { outline: none; }
 .typing span { width: 7px; height: 7px; border-radius: 50%; background: var(--muted); animation: blink 1s infinite ease-in-out; }
 .typing span:nth-child(2) { animation-delay: 0.15s; }
 .typing span:nth-child(3) { animation-delay: 0.3s; }
-.chat.settled > * { opacity: 1; animation: none; }
 @keyframes rise { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
 @keyframes blink { 0%, 80%, 100% { opacity: 0.25; } 40% { opacity: 1; } }
 

@@ -221,12 +221,17 @@ def home(site, news, projects, pubs):
       <img class="avatar" src="{e_(site['headshot'])}" alt="{e_(site['name'])}" width="56" height="56">
       <p class="bubble big">{e_(h['greeting'])}</p>
     </div>
-    <p class="bubble user">{e_(h['question'])}</p>
-    <div class="turn agent reply">
+    <button type="button" class="ask" data-ask hidden>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3h11A2.5 2.5 0 0 1 20 5.5v8a2.5 2.5 0 0 1-2.5 2.5H10l-4.5 4v-4A2.5 2.5 0 0 1 4 13.5Z"/></svg>
+      <span>{e_(h['question'])}</span>
+      <span class="ask-hint">Ask</span>
+    </button>
+    <p class="bubble user" data-question>{e_(h['question'])}</p>
+    <div class="turn agent reply" data-reply aria-live="polite">
       <span class="avatar-space" aria-hidden="true"></span>
       <div>
         <p class="bubble typing" aria-hidden="true"><span></span><span></span><span></span></p>
-        <p class="bubble answer">{e_(h['answer'])}</p>
+        <p class="bubble answer" tabindex="-1">{e_(h['answer'])}</p>
       </div>
     </div>
     <p class="chips">
