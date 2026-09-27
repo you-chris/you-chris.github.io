@@ -1,0 +1,112 @@
+# Projects, shown in this order on projects.html. The first `featured` ones
+# also appear on the home page.
+#   slug         anchor id (projects.html#slug)
+#   tags         any of: "AI agents", "AI/ML", "Virtual reality", "Digital health"
+#   papers       refs.bib keys; listed under the project with links
+#   video        YouTube video id (the part after /embed/)
+#   links        [[project.links]] label + url
+
+[[project]]
+slug = "build-a-being"
+title = "Build-A-Being Yourself"
+subtitle = "A web-based conversational AI platform for healthcare research"
+dates = "2022 – present"
+image = "images/bab.png"
+tags = ["AI agents", "AI/ML", "Digital health"]
+featured = true
+summary = "Lets domain experts deploy embodied conversational interventions at scale, with no programming required."
+description = """Build-A-Being Yourself (BABY) lets domain experts rapidly deploy embodied conversational interventions at scale, with no programming required. It coordinates agentic workflows across dialogue planning, strategy selection, and LLM-driven response generation. The platform has been used across NIH-funded studies in mental health, cancer clinical trial enrollment, and patient simulation for university curricula."""
+tech = "Node.js, React, Express, AWS, OpenAI, LLMs, RAG, Python, MongoDB, REST APIs"
+papers = ["you2025build"]
+  [[project.links]]
+  label = "buildabeing.com"
+  url = "https://buildabeing.com/"
+
+[[project]]
+slug = "alex"
+title = "ALEX: Clinical trial enrollment"
+subtitle = "NIH R24 project using virtual humans to widen clinical trial participation"
+dates = "2021 – present"
+image = "images/r24.png"
+tags = ["AI agents", "AI/ML", "Digital health"]
+featured = true
+summary = "A culturally sensitive virtual health assistant that helps older minority adults learn about and join clinical trials."
+description = """This NIH-funded project uses virtual human technology to increase clinical trial participation among older adults from minority communities (Black/African American, Hispanic/Latin, and rural adults over 50). We designed the virtual human ALEX to be culturally sensitive, tracked engagement in NIH-funded trials, and compared ALEX with standard recruitment methods. Clinical trials are queried and summarized in real time with LLM prompting and a retrieval-augmented chatbot."""
+tech = "HTML, JavaScript, CSS, Unreal Engine, MetaHumans, machine learning models, Python, ChatGPT"
+video = "YCW4kUPji3M"
+papers = ["ghosh2025impact", "ghosh2025exploring", "ghosh2024real", "you2026bot"]
+
+[[project]]
+slug = "mental-health-conversations"
+title = "AI agents in mental health conversations"
+subtitle = "Generative-AI virtual humans for motivational interviewing"
+dates = "2024"
+image = "images/Demo2Photo.png"
+tags = ["AI agents", "AI/ML", "Digital health"]
+featured = true
+summary = "Virtual humans that hold motivational interviews to build readiness to change."
+description = """Asynchronous online mental health platforms are accessible and flexible, but they often lack the connection that keeps people engaged. This project uses generative-AI virtual humans to hold more natural, adaptive motivational interviews, and studies how they affect users' readiness for change, acceptance of mental health interventions, and trust in the therapeutic process."""
+tech = "Node, JavaScript, CSS, AWS, OpenAI, three.js, machine learning models, Python, FastAPI"
+video = "FfrgROk4F6c"
+papers = ["you2025alter", "you2026human"]
+
+[[project]]
+slug = "guided-personas"
+title = "Embodied interactions with AI agents"
+subtitle = "Designing guided personas to improve virtual human interaction and readiness to change"
+dates = "2024"
+image = "images/Demo1Photo.png"
+tags = ["AI agents"]
+summary = "Guided personas that shape how people interact with a virtual human about their mental health."
+description = """Designing guided personas that shape how users interact with a virtual human, with the goal of improving engagement and readiness to change in mental health conversations."""
+tech = "Node, JavaScript, CSS, AWS, OpenAI, three.js, machine learning models, Python, FastAPI"
+video = "VuiQhwGgrfM"
+
+[[project]]
+slug = "change-talk"
+title = "Classifying motivational interviews"
+subtitle = "Fine-tuned BERT and data augmentation to classify change, sustain, and neutral talk"
+dates = "2025"
+image = "images/ClassificationMI.png"
+tags = ["AI/ML", "AI agents"]
+summary = "Real-time classification of change talk so agents and users can see it as the conversation happens."
+description = """We fine-tune models to classify change talk, sustain talk, and neutral talk in motivational interviews. Users and agents can see classified utterances in real time, and LLMs use the classification to shape their responses, with the goal of improving readiness to change."""
+tech = "Node, JavaScript, CSS, AWS, OpenAI, three.js, Python, HiPerGator, BERT, data augmentation, back-translation"
+papers = ["you2026human"]
+
+[[project]]
+slug = "embodiment-agency"
+title = "Embodiment and agency of virtual avatars"
+subtitle = "Challenges in evaluating agency and embodiment in virtual reality"
+dates = "2022 – 2024"
+image = "images/embodiment.png"
+tags = ["Virtual reality"]
+summary = "How much control over an avatar changes embodiment, and why current agency measures fall short."
+description = """Participants controlled avatars with increasing degrees of movement (head only, head and torso, full body). More control increased embodiment, but current measures of the sense of agency proved inconsistent, pointing to better ways of measuring how control and agency interact in VR."""
+tech = "Unity, Python"
+video = "Zv18N9q6Ml0"
+papers = ["you2024sense", "you2024my"]
+
+[[project]]
+slug = "strafing-gain"
+title = "Redirected walking: strafing gain"
+subtitle = "Redirecting users one diagonal step at a time"
+dates = "2019 – 2022"
+image = "images/rdw.png"
+tags = ["Virtual reality"]
+summary = "Lateral self-motion gains that move walkers along a diagonal while keeping their orientation."
+description = """Redirected walking lets people explore virtual spaces larger than their physical room. Strafing gain adds small lateral movements so the user walks a diagonal path while keeping their original orientation. In a study with 27 participants, users could be redirected along a 5.57° diagonal to the right and 4.68° to the left without noticing; a follow-up with 10 participants confirmed orientation was maintained."""
+tech = "Unity, C#"
+video = "iiEHaqLrtss"
+papers = ["you2022strafing", "you2019strafing"]
+
+[[project]]
+slug = "get-prepd"
+title = "GET PrEPD"
+subtitle = "Goal elicitation, treatment prioritization, and electronically practiced discussion"
+dates = "2020"
+image = "images/gpp2.png"
+tags = ["AI agents", "Digital health"]
+summary = "Virtual humans that help patients with severe mental illness prepare for treatment decisions."
+description = """GET PrEPD advocates for the needs of patients with severe mental illnesses, using virtual humans to improve decision-making and patients' self-efficacy."""
+tech = "Django, Inkle (dialogue management), React, Unity, Synthesia"

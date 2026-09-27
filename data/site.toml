@@ -1,0 +1,46 @@
+# Site-wide content. Edit here, then run: python tools/build.py
+
+name = "Christopher You"
+role = "Postdoctoral Fellow"
+affiliation = "Center for Digital Health & AI, Johns Hopkins University"
+affiliation_url = "https://cdhai.carey.jhu.edu/"
+location = "Baltimore, MD"
+email = "cyou11@jhu.edu"
+url = "https://christopher.you"
+description = "Christopher You is a Postdoctoral Fellow at the Johns Hopkins Center for Digital Health & AI, building and studying AI agents that help people talk about their health."
+headshot = "images/headshot.jpg"
+
+cv_pdf = "assets/You_CV.pdf"
+resume_pdf = "assets/You_Resume.pdf"
+
+# Paragraphs for the About section. Inline HTML is allowed.
+about = [
+  "I work on AI agents for health: LLM-driven conversational and multi-agent systems, how people engage with and trust them, and how to deploy them responsibly. Earlier work in virtual reality and embodiment still shapes how I design these interactions. Much of it is collaborative: with partners such as the Mayo Clinic, I've worked on NIH- and NSF-funded projects addressing cancer disparities in underrepresented populations.",
+  "I hold a PhD in Human-Centered Computing and an M.S. in Computer Science from the University of Florida.",
+  "Outside of research I travel, spend time on the lakes, and (poorly) play golf. Boba, my cat, supervises most of my coding.",
+  "I'm always glad to talk about new collaborations in human-computer interaction, AI agents, LLMs, and AR/VR.",
+]
+
+[[links]]
+label = "Google Scholar"
+url = "https://scholar.google.com/citations?user=A7jsjIgAAAAJ&hl=en"
+
+[[links]]
+label = "ORCID"
+url = "https://orcid.org/0000-0002-2045-5796"
+
+[[links]]
+label = "LinkedIn"
+url = "https://www.linkedin.com/in/christopher-you-4a6bb0180/"
+
+[[links]]
+label = "GitHub"
+url = "https://github.com/you-chris"
+
+# The home-page conversation. Each turn is shown as a chat bubble.
+[hero]
+greeting = "Hi, I'm Christopher. I build AI agents that help people talk about their health."
+question = "What are you working on now?"
+answer = "I'm a Postdoctoral Fellow at the Johns Hopkins Center for Digital Health & AI, working on next-generation AI models, responsible AI, and bringing AI into clinical practice. My PhD looked at how perspective-taking and embodiment change what people share with AI agents in mental health conversations."
+images = ["images/Demo1Photo.png", "images/r24.png", "images/ClassificationMI.png"]
+image_alts = ["An embodied AI agent greeting a user", "ALEX, a virtual health assistant for clinical trial education", "A chatbot that classifies change talk during a motivational interview"]

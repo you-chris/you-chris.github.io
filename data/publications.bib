@@ -1,0 +1,327 @@
+% =============================================================================
+% refs.bib: single source of truth for publications.
+% Used by: cv.tex, resume.tex, you_resume.tex (biblatex/biber), tools/pubs.py
+% (generates cv/writing.tex + cv/writing_r.tex), and the website (copied to
+% christopheryou.github.io/data/publications.bib by the site-sync skill).
+%
+% Conventions
+%   author      Write my name as "You, Christopher". It is highlighted
+%               automatically (see pubstyle.tex); never add markup to it.
+%   year/month  Numeric. Leave year out for unpublished work and set pubstate.
+%   pubstate    inpreparation | submitted | inreview | forthcoming   (omit once published)
+%   keywords    Exactly one category: journal | conference | poster | mentored
+%               Add "selected" to feature the paper on the website home page.
+%   doi         Bare DOI (10.xxxx/...), no https://doi.org/ prefix.
+%   shorttitle  Optional. Shorter title used on the one-page resume.
+%   shortvenue  Optional. Short venue used on the resume and website (e.g. ACM IVA).
+%   pdf         Optional. Filename in the website's samples/ folder.
+%   pdfnote     Optional. Caveat shown next to the PDF link on the website.
+%   Protect proper nouns and acronyms in titles with braces: {AI}, {ALEX}.
+% =============================================================================
+
+% --- Journal articles --------------------------------------------------------
+
+@article{you2025alter,
+  title      = {Alter egos alter engagement: perspective-taking can improve disclosure quantity and depth to {AI} chatbots in promoting mental wellbeing},
+  shorttitle = {Alter egos alter engagement: Perspective-taking can improve disclosure quantity and depth to {AI} chatbots},
+  author     = {You, Christopher and Ghosh, Rashi and Vilaro, Melissa and Venkatakrishnan, Roshan and Venkatakrishnan, Rohith and Maxim, Andrew and Peng, Xuening and Tamboli, Danish and Lok, Benjamin},
+  journal    = {Frontiers in Digital Health},
+  volume     = {7},
+  pages      = {1655860},
+  publisher  = {Frontiers},
+  year       = {2025},
+  month      = {9},
+  doi        = {10.3389/fdgth.2025.1655860},
+  keywords   = {journal, selected},
+  pdf        = {Alter_Egos_Alter_Engagement_Frontiers_2025.pdf},
+}
+
+@article{you2024sense,
+  title      = {A sense of urgency on the sense of agency: challenges in evaluating agency and embodiment in virtual reality},
+  shorttitle = {A sense of urgency on the sense of agency: Challenges in evaluating agency and embodiment in {VR}},
+  author     = {You, Christopher and Venkatakrishnan, Roshan and Venkatakrishnan, Rohith and Han, Zhuoming and Lok, Benjamin and Peck, Tabitha},
+  journal    = {IEEE Transactions on Visualization and Computer Graphics},
+  shortvenue = {IEEE Trans. Visualization \& Computer Graphics},
+  publisher  = {IEEE},
+  year       = {2024},
+  month      = {9},
+  doi        = {10.1109/tvcg.2024.3456139},
+  keywords   = {journal, selected},
+  pdf        = {A_Sense_of_Urgency_on_the_Sense_of_Agency_TVCG_2024.pdf},
+}
+
+@article{you2024my,
+  title      = {What my bias meant for my embodiment: an investigation on virtual embodiment in desktop-based virtual reality},
+  shorttitle = {What my bias meant for my embodiment: Virtual embodiment in desktop-based {VR}},
+  author     = {You, Christopher and Peck, Tabitha and Stuart, Jacob and Gomes de Siqueira, Alexandre and Lok, Benjamin},
+  journal    = {Frontiers in Virtual Reality},
+  volume     = {5},
+  pages      = {1251564},
+  publisher  = {Frontiers Media SA},
+  year       = {2024},
+  month      = {3},
+  doi        = {10.3389/frvir.2024.1251564},
+  keywords   = {journal},
+}
+
+@article{you2026human,
+  title      = {Social perspective-taking and human-{AI} collaboration can promote change talk and readiness in agent-delivered motivational interviews},
+  author     = {You, Christopher and Ghosh, Rashi and Canales, Ryan and Venkatakrishnan, Roshan and Venkatakrishnan, Rohith and Kauer, Trevor and Lok, Benjamin},
+  journal    = {Computers in Human Behavior},
+  publisher  = {Elsevier},
+  pubstate   = {inreview},
+  doi        = {10.2139/ssrn.7403173},
+  note       = {Preprint available on SSRN},
+  keywords   = {journal},
+  pdf        = {LLMs_to_Promote_Change_Talk_Dissertation_S3_2026.pdf},
+  pdfnote    = {PDF is the dissertation chapter; the DOI links to the SSRN preprint},
+}
+
+@article{you2026bot,
+  title      = {Applying positive-unlabeled learning for fraudulent data detection in online clinical trial recruitment},
+  shorttitle = {Positive-unlabeled learning for fraudulent data detection in online clinical trial recruitment},
+  author     = {You, Christopher and Ghosh, Rashi and Kauer, Trevor and Franco, Courtney and Canales, Ryan and Krieger, Janice and Lok, Benjamin},
+  journal    = {Journal of the American Medical Informatics Association},
+  shortvenue = {J. American Medical Informatics Assoc.},
+  publisher  = {Oxford University Press},
+  pubstate   = {inpreparation},
+  keywords   = {journal},
+}
+
+% --- Conference papers -------------------------------------------------------
+
+@inproceedings{tamboli2026experiential,
+  title      = {Experiential knowledge in multi-agent virtual health systems: the value of an expert patient agent},
+  author     = {Tamboli, Danish N. A. and Canales, Ryan and You, Christopher and Reese, Peter and Potluri, Vishnu and Lok, Benjamin},
+  booktitle  = {Proceedings of the 26th ACM International Conference on Intelligent Virtual Agents},
+  shortvenue = {ACM IVA},
+  pages      = {1--10},
+  year       = {2026},
+  month      = {9},
+  doi        = {10.1145/3806774.3827979},
+  keywords   = {conference},
+}
+
+@inproceedings{you2025build,
+  title      = {{Build-A-Being Yourself}: A web-based system for authoring embodied conversational agents in healthcare research},
+  author     = {You, Christopher and Ghosh, Rashi and Maxim, Andrew and Peng, Xuening and Tamboli, Danish and Huang, Zhanhong and Venkatakrishnan, Roshan and Lok, Benjamin},
+  booktitle  = {International Conference on Human-Computer Interaction},
+  shortvenue = {Int'l Conf. on Human-Computer Interaction},
+  pages      = {427--446},
+  address    = {Cham},
+  publisher  = {Springer Nature Switzerland},
+  year       = {2026},
+  month      = {6},
+  doi        = {10.1007/978-3-032-29842-3_28},
+  keywords   = {conference, selected},
+  pdf        = {Build_a_Being_Yourself_HCII_2026.pdf},
+}
+
+@inproceedings{ghosh2025impact,
+  title      = {The impact of health literacy in a virtual agent intervention addressing barriers to cancer clinical trial participation},
+  author     = {Ghosh, Rashi and You, Christopher and Venkatakrishnan, Roshan and Lok, Benjamin},
+  booktitle  = {Proceedings of the 13th International Conference on Human-Agent Interaction},
+  shortvenue = {ACM Conf. on Human-Agent Interaction},
+  pages      = {76--86},
+  year       = {2025},
+  month      = {11},
+  doi        = {10.1145/3765766.3765769},
+  keywords   = {conference},
+  pdf        = {The_Impact_Of_Health_Literacy_HAI_2025.pdf},
+}
+
+@inproceedings{ghosh2025exploring,
+  title      = {Exploring the influence of multiple virtual agents for addressing barriers to cancer clinical trial participation},
+  author     = {Ghosh, Rashi and You, Christopher and Venkatakrishnan, Roshan and Lok, Benjamin},
+  booktitle  = {Proceedings of the 25th ACM International Conference on Intelligent Virtual Agents},
+  shortvenue = {ACM IVA},
+  pages      = {1--10},
+  year       = {2025},
+  month      = {9},
+  doi        = {10.1145/3717511.3747063},
+  keywords   = {conference},
+  pdf        = {Exploring_the_Influence_of_Multiple_Virtual_Agents_IVA_2025.pdf},
+}
+
+@inproceedings{you2022strafing,
+  title      = {Strafing gain: Redirecting users one diagonal step at a time},
+  author     = {You, Christopher and Benda, Brett and Rosenberg, Evan Suma and Ragan, Eric and Lok, Benjamin and Thomas, Jerald},
+  booktitle  = {2022 IEEE International Symposium on Mixed and Augmented Reality (ISMAR)},
+  shortvenue = {IEEE ISMAR},
+  pages      = {603--611},
+  organization = {IEEE},
+  year       = {2022},
+  month      = {10},
+  doi        = {10.1109/ismar55827.2022.00077},
+  keywords   = {conference},
+  pdf        = {Strafing_Gain_ISMAR_2022.pdf},
+}
+
+@inproceedings{you2022does,
+  title      = {How does a virtual human earn your trust? {G}uidelines to improve willingness to self-disclose to intelligent virtual agents},
+  author     = {You, Christopher and Ghosh, Rashi and Maxim, Andrew and Stuart, Jacob and Cooks, Eric and Lok, Benjamin},
+  booktitle  = {Proceedings of the 22nd ACM International Conference on Intelligent Virtual Agents},
+  shortvenue = {ACM IVA},
+  pages      = {1--8},
+  year       = {2022},
+  month      = {9},
+  doi        = {10.1145/3514197.3549686},
+  keywords   = {conference},
+  pdf        = {How_does_a_virtual_human_earn_your_trust_IVA_2022.pdf},
+}
+
+@inproceedings{ghosh2026embodying,
+  title      = {Embodying support: Investigating multiple embodied virtual agents on engagement and behavioral outcomes in health information seeking},
+  shorttitle = {Embodying support: Multiple embodied virtual agents on engagement in health information seeking},
+  author     = {Ghosh, Rashi and You, Christopher and Canales, Ryan and Venkatakrishnan, Roshan and Lok, Benjamin},
+  booktitle  = {Proceedings of the 26th ACM International Conference on Intelligent Virtual Agents},
+  shortvenue = {ACM IVA},
+  pages      = {1--10},
+  pubstate   = {submitted},
+  keywords   = {conference},
+}
+
+% --- Posters, abstracts, and demos -------------------------------------------
+
+@inproceedings{wang2027information,
+  title      = {Information that sparks dialogue: Supporting clinical trial communication through an {AI}-enabled portal},
+  author     = {Wang, F. and Maxim, A. H. and Franco, C. and Ghosh, R. and You, Christopher and Kauer, T. and Anton, S. and Flood-Grady, E. and Gaillard, T. and George, T. J. and Lok, B. and Tucker, C. and Vilaro, M. and Lin, T. and Webb, F. and Wilkie, D. and Wilson-Howard, D. and Carrasquillo, O. and Krieger, J. L.},
+  booktitle  = {American Psychosocial Oncology Society (APOS) 24th Annual Conference},
+  shortvenue = {APOS},
+  pubstate   = {inreview},
+  keywords   = {poster},
+}
+
+@inproceedings{wang2026information,
+  title      = {Information that sparks dialogue: Supporting clinical trial communication through an {AI}-enabled portal},
+  author     = {Wang, F. and Maxim, A. H. and Franco, C. and Ghosh, R. and You, Christopher and Kauer, T. and Anton, S. and Flood-Grady, E. and Gaillard, T. and George, T. J. and Lok, B. and Tucker, C. and Vilaro, M. and Lin, T. and Webb, F. and Wilkie, D. and Wilson-Howard, D. and Carrasquillo, O. and Krieger, J. L.},
+  booktitle  = {2026 Mayo Research Fellows' Association Florida Research Day},
+  shortvenue = {Mayo MRFA Research Day},
+  pubstate   = {inreview},
+  keywords   = {poster},
+}
+
+@inproceedings{wang2026techquity,
+  title      = {Techquity through community-engaged {AI} design: A multisite formative evaluation of the {ALEX} portal for equitable cancer clinical trial access},
+  author     = {Wang, F. and Ghosh, R. and You, Christopher and Kauer, T. and Maxim, A. H. and Franco, C. and Anton, S. and Flood-Grady, E. and Gaillard, T. and George, T. J. and Lok, B. and Tucker, C. and Vilaro, M. and Lin, T. and Webb, F. and Wilkie, D. and Wilson-Howard, D. and Carrasquillo, O. and Krieger, J. L.},
+  booktitle  = {2026 Community Health Outcomes Research and Discovery Science Conference},
+  pages      = {1},
+  pubstate   = {submitted},
+  keywords   = {poster},
+}
+
+@inproceedings{wang2026community,
+  title      = {Can artificial intelligence amplify community voice? {E}vidence from a multisite formative evaluation of the {AI}-powered {ALEX} portal to enhance equity in clinical trial access},
+  author     = {Wang, F. and Ghosh, R. and You, Christopher and Kauer, T. and Maxim, A. H. and Franco, C. and Anton, S. and Flood-Grady, E. and Gaillard, T. and George, T. J. and Lok, B. and Tucker, C. and Vilaro, M. and Lin, T. and Webb, F. and Wilkie, D. and Wilson-Howard, D. and Carrasquillo, O. and Krieger, J. L.},
+  booktitle  = {19th AACR Conference on The Science of Cancer Health Disparities},
+  pages      = {1},
+  pubstate   = {submitted},
+  keywords   = {poster},
+}
+
+@inproceedings{kauer2025representation,
+  title      = {Representation matters: The feasibility and impact of photo-realistic and social identity-matched virtual community health educators among {Black}, {Hispanic}, and {Rural} {Adults}},
+  author     = {Kauer, T. and Franco, C. and Munroe, D. and Flood-Grady, E. and Gaillard, T. and George, T. and Lin, T. and Lok, B. and Tucker, C. and Vilaro, M. and Webb, F. and Wilke, D. and Wilson-Howard, D. and Ghosh, R. and You, Christopher and Serat, J. and Buhr, M. and Murphy, C. and van Mossel, A. and Wynter, S. and Carrasquillo, O. and Anton, S. and Krieger, J.},
+  booktitle  = {Science of Community Outreach and Engagement Annual Conference},
+  pages      = {1},
+  year       = {2025},
+  keywords   = {poster},
+}
+
+@inproceedings{huynh2025patient,
+  title      = {A patient chatbot to support interprofessional learning},
+  author     = {Huynh, Leyna and You, Christopher and Mazorra, Gustavo and Black, Erik and Lok, Benjamin and Blue, Amy},
+  booktitle  = {Collaborating Across Borders IX},
+  pages      = {1},
+  year       = {2025},
+  note       = {Oral presentation},
+  keywords   = {poster},
+}
+
+@inproceedings{munroe2025connecting,
+  title      = {Connecting communities: Developing a provider portal to enhance cancer trial diversity},
+  author     = {Munroe, D. and Kauer, T. and Franco, C. and Ghosh, R. and You, Christopher and Ford, H. and Lok, B. and Krieger, J. L},
+  booktitle  = {Science of Communication Outreach and Engagement Annual Conference},
+  pages      = {1},
+  year       = {2025},
+  keywords   = {poster},
+}
+
+@inproceedings{kauer2025connecting,
+  title      = {Connecting older adults to clinical trials: Developing the {ALEX} clinical trial referral portal},
+  author     = {Kauer, T. and Franco, C. and Lok, B. and Tucker, C. and Lin, T. and Flood-Grady, E. and Ghosh, R. and You, Christopher and Wilson-Howard, D. and Gaillard, T. and Anton, S. and Krieger, J.},
+  booktitle  = {14th Annual Alliance Meeting for Healthy Aging Conference},
+  pages      = {1},
+  year       = {2025},
+  keywords   = {poster},
+}
+
+@inproceedings{kauer2025strengths,
+  title      = {A strengths- and community-based approach to increasing medical research participation among {Black}, {Hispanic}, and {White} rural populations in {Florida} [{P}oster {P}resentation]},
+  author     = {Kauer, T. and Franco, C. and Munroe, D. and Flood-Grady, E. and Gaillard, T. and Lin, T. and Lok, B. and Tucker, C. and Wilson-Howard, D. and Ghosh, R. and You, Christopher and Serat, J. and Buhr, M. and Wynter, S. and Anton, S. and Krieger, J.},
+  booktitle  = {Mayo Clinic Transforming Community and Rural Healthcare 2025 Conference, Rochester, MN},
+  pages      = {1},
+  year       = {2025},
+  keywords   = {poster},
+}
+
+@inproceedings{ghosh2024real,
+  title      = {Real-time virtual human for promoting clinical trial education and recruitment},
+  author     = {Ghosh, Rashi and Maxim, Andrew and You, Christopher and Lok, Benjamin},
+  booktitle  = {2024 IEEE Conference on Virtual Reality and 3D User Interfaces Abstracts and Workshops (VRW)},
+  shortvenue = {IEEE VR},
+  pages      = {1184--1185},
+  organization = {IEEE},
+  year       = {2024},
+  month      = {3},
+  doi        = {10.1109/vrw62533.2024.00386},
+  keywords   = {poster},
+}
+
+@inproceedings{jurczyk2021romadoro,
+  title      = {{Romadoro}: Leveraging nudge techniques to encourage break-taking},
+  author     = {Jurczyk, Katarina and You, Christopher and Nourani, Mahsan and Gupta, Manas and Anthony, Lisa and Lok, Benjamin},
+  booktitle  = {Adjunct Proceedings of the 34th Annual ACM Symposium on User Interface Software and Technology},
+  shortvenue = {ACM UIST},
+  pages      = {66--69},
+  year       = {2021},
+  month      = {10},
+  doi        = {10.1145/3474349.3480231},
+  keywords   = {poster},
+}
+
+@inproceedings{you2019strafing,
+  title      = {Strafing gain: A novel redirected walking technique},
+  author     = {You, Christopher and Suma Rosenberg, Evan and Thomas, Jerald},
+  booktitle  = {Symposium on Spatial User Interaction},
+  shortvenue = {ACM SUI},
+  pages      = {1--1},
+  year       = {2019},
+  month      = {10},
+  doi        = {10.1145/3357251.3358757},
+  keywords   = {poster},
+}
+
+% --- Undergraduate-mentored articles -----------------------------------------
+
+@article{huynh2025feasibility,
+  title      = {A feasibility study to assess virtual patients authenticity on building confidence in students' clinical decision-making},
+  author     = {Huynh, Leyna and Blue, Amy and You, Christopher and Lok, Benjamin and Smith, Gabriella and Ghosh, Rashi and Venkatakrishnan, Roshan},
+  journal    = {UF Journal of Undergraduate Research},
+  volume     = {27},
+  year       = {2025},
+  month      = {11},
+  doi        = {10.32473/ufjur.27.139095},
+  keywords   = {mentored},
+}
+
+@article{smith2025evaluating,
+  title      = {Evaluating lip synchronization techniques in {LLM}-based virtual humans for healthcare and computer science applications},
+  author     = {Smith, Gabriella and Huynh, Leyna and You, Christopher and Ghosh, Rashi and Venkatakrishnan, Roshan and Lok, Benjamin},
+  journal    = {UF Journal of Undergraduate Research},
+  volume     = {27},
+  year       = {2025},
+  month      = {11},
+  doi        = {10.32473/ufjur.27.139077},
+  keywords   = {mentored},
+}
