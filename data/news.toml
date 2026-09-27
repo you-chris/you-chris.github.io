@@ -23,7 +23,6 @@ image = "images/bab.webp"
 date = "2026-04"
 title = "Defended my dissertation"
 text = "<i>A change in perspective: Exploring interaction paradigms in AI and virtual human systems that engage users and promote mental health.</i>"
-image = "images/avatars.webp"
 
 [[news]]
 date = "2026-01"

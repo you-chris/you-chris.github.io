@@ -7,7 +7,7 @@ affiliation_url = "https://cdhai.carey.jhu.edu/"
 location = "Baltimore, MD"
 email = "cyou11@jhu.edu"
 url = "https://christopher.you"
-description = "Christopher You is a Postdoctoral Fellow at the Johns Hopkins Center for Digital Health & AI, building and studying AI agents that help people talk about their health."
+description = "Christopher You is a Postdoctoral Fellow at the Johns Hopkins Center for Digital Health & AI, building and evaluating trustworthy AI agents for healthcare."
 headshot = "images/headshot.jpg"
 
 cv_pdf = "assets/You_CV.pdf"
@@ -31,7 +31,7 @@ url = "https://orcid.org/0000-0002-2045-5796"
 
 [[links]]
 label = "LinkedIn"
-url = "https://www.linkedin.com/in/christopher-you-4a6bb0180/"
+url = "https://www.linkedin.com/in/christopher-you-ph-d-4a6bb0180/"
 
 [[links]]
 label = "GitHub"
@@ -39,7 +39,7 @@ url = "https://github.com/you-chris"
 
 # The home-page conversation. Each turn is shown as a chat bubble.
 [hero]
-greeting = "Hi, I'm Christopher. I build AI agents that help people talk about their health."
+greeting = "Hi, I'm Christopher. I build AI agents for healthcare that patients and clinicians can trust."
 question = "What are you working on now?"
 answer = "At the Johns Hopkins Center for Digital Health & AI, I build next-generation AI agents for healthcare and bring them responsibly into clinical practice. Before Hopkins, at the University of Florida, I built AI agents for NIH-funded R24 and U01 projects helping patients learn about and join cancer clinical trials."
 images = ["images/Demo1Photo.webp", "images/r24.png", "images/ClassificationMI.webp"]
